@@ -12,10 +12,21 @@ public abstract class Character : MonoBehaviour
     protected Rigidbody2D rb;
 
     //method
+    public void Intialize(int startHealth)
+    {
+        Health = startHealth;
+        Debug.Log($"Name: {this.name}, Health: {this.Health}.");
+
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    //method
     public void TakeDamage(int damage)
     {
         Health-= damage;
         Debug.Log($"{this.name} took damage: {damage}. Current Health: {Health}.");
+        IsDead();
     }
 
     public bool IsDead()
