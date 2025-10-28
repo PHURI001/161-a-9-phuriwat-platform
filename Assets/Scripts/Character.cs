@@ -6,7 +6,7 @@ public abstract class Character : MonoBehaviour
     private int health;
     public int Health 
     { get => health; 
-        set => health = (value < 0) ? 0 : value; }
+        set => health = (value <= 0) ? 0 : value; }
 
     protected Animator anim;
     protected Rigidbody2D rb;
