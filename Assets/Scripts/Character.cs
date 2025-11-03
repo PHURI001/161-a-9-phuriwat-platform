@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class Character : MonoBehaviour
@@ -11,12 +12,14 @@ public abstract class Character : MonoBehaviour
     protected Animator anim;
     protected Rigidbody2D rb;
 
+    public HealthBar healthBar;
+
     //method
     public void Intialize(int startHealth)
     {
+        healthBar.SetMaxHealth(startHealth);
         Health = startHealth;
         Debug.Log($"Name: {this.name}, Health: {this.Health}.");
-
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -26,6 +29,7 @@ public abstract class Character : MonoBehaviour
     {
         Health-= damage;
         Debug.Log($"{this.name} took damage: {damage}. Current Health: {Health}.");
+        healthBar.SetHealth(Health);
         IsDead();
     }
 
@@ -43,7 +47,7 @@ public abstract class Character : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

@@ -29,8 +29,9 @@ public abstract class Weapon : MonoBehaviour
         if (character != null)
         {
             OnHitWith(character);
-            Destroy(this.gameObject, 5f);
+            Destroy(this.gameObject);
         }
+        //Destroy(this.gameObject);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
