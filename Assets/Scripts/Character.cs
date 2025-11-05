@@ -12,12 +12,12 @@ public abstract class Character : MonoBehaviour
     protected Animator anim;
     protected Rigidbody2D rb;
 
-    public HealthBar healthBar;
+    public HealthBar HealthBar;
 
     //method
     public void Intialize(int startHealth)
     {
-        healthBar.SetMaxHealth(startHealth);
+        HealthBar.SetMaxHealth(startHealth);
         Health = startHealth;
         Debug.Log($"Name: {this.name}, Health: {this.Health}.");
         anim = GetComponent<Animator>();
@@ -29,7 +29,7 @@ public abstract class Character : MonoBehaviour
     {
         Health-= damage;
         Debug.Log($"{this.name} took damage: {damage}. Current Health: {Health}.");
-        healthBar.SetHealth(Health);
+        HealthBar.SetHealth(Health);
         IsDead();
     }
 

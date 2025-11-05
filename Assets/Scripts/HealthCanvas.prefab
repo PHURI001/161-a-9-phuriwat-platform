@@ -354,4 +354,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27642b7cbf0a10448b9ed3e752156271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
-  slider: {fileID: 1579852545974071546}
+  Slider: {fileID: 1579852545974071546}

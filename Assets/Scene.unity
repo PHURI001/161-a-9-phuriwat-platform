@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e2f6edb6cd84134eb5e25509717f455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  healthBar: {fileID: 798544642}
+  HealthBar: {fileID: 798544642}
   <Bullet>k__BackingField: {fileID: 182108, guid: a5638a192258f4059b0e074542d33fbc, type: 3}
   <ShootPoint>k__BackingField: {fileID: 1108025160}
   <ReloadTime>k__BackingField: 0
@@ -1152,7 +1152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c44551535353e184caa024f92b737dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ant
-  healthBar: {fileID: 1511476643}
+  HealthBar: {fileID: 1511476643}
   velocity: {x: 0, y: 0}
   MovePoints:
   - {fileID: 5502782}
@@ -2601,7 +2601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a4fe54c4c38aa44b5a41c8e50d9564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Crocodile
-  healthBar: {fileID: 1444219213}
+  HealthBar: {fileID: 1444219213}
   atkRange: 0
   Player: {fileID: 3545359}
   <Bullet>k__BackingField: {fileID: 115806, guid: 40466c5ac40024bbca1e4b144cdf43c2, type: 3}
